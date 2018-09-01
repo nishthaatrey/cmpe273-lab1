@@ -1,6 +1,5 @@
 import requests
 import threading
-import time
 
 def async_call():
     r=requests.get('https://webhook.site/#/10c68a23-5b6a-4f00-938a-a74d8d4a653a')
