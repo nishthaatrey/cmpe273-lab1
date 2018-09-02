@@ -10,8 +10,8 @@ def webhook():
     
 #Function for printing the received dates
 async def main(routine):
-    for futures in asyncio.as_completed(routine):
-        print(await futures)
+    for date in asyncio.as_completed(routine):
+        print(await date)
 
 #Generating event loop using asyncio library for asynchrounous jobs, running the loop and finally closing it
 routine=[webhook() for i in range (0,3)]
